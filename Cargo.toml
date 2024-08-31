@@ -1,0 +1,20 @@
+[package]
+name = "rustle"
+version = "0.1.0"
+authors = ["Jaekob Childress <jaekob.childress@gmail.com>"]
+edition = "2021"
+description = "Rustle is a memory-safe, efficient HTTP client tool written in Rust, inspired by curl."
+license = "MIT"
+repository = "https://github.com/jaekob/rustle"
+homepage = "https://github.com/jaekob/rustle"
+documentation = "https://docs.rs/rustle"
+readme = "README.md"
+keywords = ["http", "curl", "client", "rust"]
+categories = ["command-line-utilities", "network-programming"]
+
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking"] }
+clap = "4.0"
+colored = "2.0"
+log4rs = "1.2"
