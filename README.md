@@ -1,4 +1,3 @@
-
 # Rustle 🌐🚀
 
 **Rustle** is a memory-safe, efficient HTTP client tool written in Rust, inspired by the popular `curl` utility. Rustle aims to provide a similar experience to `curl` while leveraging Rust's safety and performance features.
@@ -28,7 +27,8 @@
 
 To use Rustle, you need to have Rust installed on your system. You can install Rust using [rustup](https://rustup.rs/):
 
-You can use... curl to install rust... 🤦
+You can use... `curl` to install Rust... 🤦
+
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://rustup.rs | sh
 ```
@@ -127,5 +127,15 @@ Please make sure your code adheres to the coding standards and passes all existi
 Rustle includes a robust set of unit tests to ensure reliability and correctness. To run the tests, use:
 
 ```bash
-cargo test
+cargo test -- --nocapture
 ```
+
+This will execute all tests and display detailed output, helping you diagnose any issues.
+
+### Adding New Tests 📝
+
+When contributing new features or fixing bugs, please include relevant unit tests. Tests can be added to the `tests` module within each core component file (e.g., `args.rs`, `request.rs`). Ensure your tests cover both typical usage scenarios and edge cases.
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
